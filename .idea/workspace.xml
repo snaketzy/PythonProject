@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChatFriendsGroup/FeZaoDuKe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChatFriendsGroup/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fetchLatestFreeBlueRay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sendMail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetchLatestFreeBlueRay.py" beforeDir="false" afterPath="$PROJECT_DIR$/fetchLatestFreeBlueRay.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +16,7 @@
     <SUITE FILE_PATH="coverage/untitled2$FeZaoDuKe.coverage" NAME="FeZaoDuKe Coverage Results" MODIFIED="1533659946733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled2$fetchWeibo.coverage" NAME="fetchWeibo Coverage Results" MODIFIED="1530969521372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled2$autoChekcInServer.coverage" NAME="autoChekcInServer Coverage Results" MODIFIED="1531664980064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$fetchLatestFreeBlueRay.coverage" NAME="fetchLatestFreeBlueRay Coverage Results" MODIFIED="1534854313695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$fetchLatestFreeBlueRay.coverage" NAME="fetchLatestFreeBlueRay Coverage Results" MODIFIED="1534927133962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled2$xinya.coverage" NAME="xinya Coverage Results" MODIFIED="1529465681721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled2$autoCheckInTTGServer.coverage" NAME="autoCheckInTTGServer Coverage Results" MODIFIED="1530118908621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled2$qianmu.coverage" NAME="qianmu Coverage Results" MODIFIED="1531675712475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,8 +47,8 @@
       <file leaf-file-name="fetchLatestFreeBlueRay.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fetchLatestFreeBlueRay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="123">
+              <caret line="68" column="71" lean-forward="true" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -315,8 +308,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.40735295" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46302617" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.407281" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5142207" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.30375427" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4963145" visible="true" weight="0.18025751" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -821,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchLatestFreeBlueRay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="123">
+          <caret line="68" column="71" lean-forward="true" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

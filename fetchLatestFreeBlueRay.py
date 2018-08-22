@@ -33,7 +33,7 @@ def sendMail(content):
 
     sender = '12961606@qq.com'
     # receivers = 'tangzy@viphrm.com'  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
-    receivers = '12961606@qq.com'  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
+    receivers = 'snaketzy@163.com'  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
     # message = MIMEText('a test for python@'+time.strftime('%Y-%m-%d %H:%M:%S'), 'plain', 'utf-8')
     message = MIMEText(content, 'plain', 'utf-8')
@@ -63,12 +63,14 @@ def getFreeRecord(urlCheckIn):
     for index,record in enumerate(records):
         freeRecord = record.find_all("img",class_="pro_free")
         if freeRecord.__len__()!=0:
-            print(record.getText().strip())
+            # print(record.getText().strip())
             # print(record.find("a").get("href")+"\n")
             # recordList + record.getText().strip()+"\n"
-            recordList = recordList + record.getText().strip() + "\n"
-    # print(recordList)
-    sendMail(recordList)
+            recordList = recordList + record.getText().strip() + "\n\n"
+    print(recordList+"\n")
+    # sendMail(recordList)
 
-getFreeRecord(urlCheckIn)
+while True:
+    getFreeRecord(urlCheckIn)
+    time.sleep(1800)
 # sendMail()
