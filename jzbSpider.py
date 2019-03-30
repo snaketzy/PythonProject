@@ -9,7 +9,10 @@ import pymysql
 from bs4 import BeautifulSoup
 import traceback
 import datetime
+import time
 
+# 上帝模式
+GODSKIP = 0
 
 url1 = "http://www.jzb.com/bbs/forum-1137-1.html"
 
@@ -34,7 +37,20 @@ endIndex = re.sub("\... ",'',pg.get_text())
 currentIndex = 159 - 213
 """
 # currentIndex = 214
-currentIndex = 240
+# currentIndex = 240
+# currentIndex = 1
+# currentIndex = 46
+# currentIndex = 78
+# currentIndex = 93
+# currentIndex = 94
+# currentIndex = 105
+# currentIndex = 107
+# currentIndex = 109
+# currentIndex = 136
+# currentIndex = 160
+# currentIndex = 161
+# currentIndex = 177
+currentIndex = 244
 urls = []
 
 # 循环拿到本栏目下的分页url
@@ -163,29 +179,15 @@ def articheCommentIsMatch(href):
 @param articleCommentFloor comment第几楼
 """
 def insertArticleComment(href,articleCommentUrl,articleId,articleCommentType,articleCommentAuthor,articleCommentAuthorId,articleCommentPostDate,articleCommentContent,articleCommentFloor):
-    # """
-    # 先更新现有旧数据，然后转insert逻辑
-    # """
-    # cursor.execute(
-    #     "select * from jzb_articlecomment where articleCommentAuthor = \"" + articleCommentAuthor + "\" and articleCommentPostDate = \"" + articleCommentPostDate + "\" and ISNULL(articleCommentFloor)")
-    # result = cursor.fetchall().__len__()
-    # if result > 0:
-    #     cursor.execute("update jzb_articlecomment set jzb_articlecomment.articleCommentFloor = \"" +articleCommentFloor+ "\" where jzb_articlecomment.articleCommentId in (select * from jzb_articlecomment where articleCommentAuthor = \"" + articleCommentAuthor + "\" and articleCommentPostDate = \"" + articleCommentPostDate + "\" and articleCommentFloor = \"\") ")
-    # else:
-    #     print("旧数据更新完成")
 
-
-
-
-    cursor.execute("select * from jzb_articlecomment where articleCommentAuthor = \"" + articleCommentAuthor + "\" and articleCommentPostDate = \"" + articleCommentPostDate + "\"")
-    # cursor.execute("select * from jzb_articlecomment where articleCommentAuthor = \"" + articleCommentAuthor + "\" and articleCommentPostDate = \"" + articleCommentPostDate + "\" and articleCommentFloor = \"" + articleCommentFloor + "\"")
+    cursor.execute("select * from jzb_articlecomment where articleCommentAuthor = \"" + articleCommentAuthor + "\" and articleCommentPostDate = \"" + articleCommentPostDate + "\" and articleCommentFloor = \"" + articleCommentFloor + "\"")
     result = cursor.fetchall().__len__()
 
     if result > 0:
         print("数据库中已有acritleComment")
     else:
-        sql = "insert into jzb_articlecomment(articleCommentArticleUrl,articleCommentArticlePage,articleId,articleCommentType,articleCommentAuthor,articleCommentAuthorId,articleCommentContent,articleCommentPostDate)\
-                          values('%s','%s','%s','%s','%s','%s','%s','%s')" % \
+        sql = "insert into jzb_articlecomment(articleCommentArticleUrl,articleCommentArticlePage,articleId,articleCommentType,articleCommentAuthor,articleCommentAuthorId,articleCommentContent,articleCommentPostDate,articleCommentFloor)\
+                          values('%s','%s','%s','%s','%s','%s','%s','%s','%s')" % \
               (href,
                articleCommentUrl,
                articleId,
@@ -193,7 +195,8 @@ def insertArticleComment(href,articleCommentUrl,articleId,articleCommentType,art
                articleCommentAuthor,
                articleCommentAuthorId,
                articleCommentContent,
-               articleCommentPostDate
+               articleCommentPostDate,
+               articleCommentFloor
                )
         try:
             cursor.execute(sql)
@@ -270,6 +273,7 @@ def fetchArticleComment(data,href,page):
         @param articleCommentAuthorId comment作者Id
         @param articleCommentPostDate comment发表时间
         @param articleCommentContent comment内容
+        @param articleCommentFloor comment楼层
         """
         insertArticleComment(
             href,
@@ -282,69 +286,72 @@ def fetchArticleComment(data,href,page):
             articleCommentContent,
             articleCommentFloor
         )
-
+        print(articleCommentFloor+"楼")
+        time.sleep(1)
 
 
 # 拿到本栏目所有文章数据
 # 根据urls列表来做循环
 for url in urls:
-    # 拿到当前url的dom
-    dataContent = getContent(url)
-    content = dataContent.find_all("span", attrs={"class": "xst thread-name"})
-    # for items in range(2):
-    for items in content:
-        cursor = db.cursor()
-        # 贴链接
-        href = items.find("a",title=True).get("href")
-        # 贴标题
-        title = items.find("a",title=True).get("title")
-        # 发帖人
-        by = items.find_parent().find_next_sibling()
-        poster = by.find("cite").find("a").get_text()
-        # 发贴日期
-        postDate = by.find("em").find("span").get_text()
-        # 贴浏览数
-        viewed = int(items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text())
-        # 贴回复数
-        replies = int(items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text())
+        # 拿到当前url的dom
+        dataContent = getContent(url)
+        content = dataContent.find_all("span", attrs={"class": "xst thread-name"})
+        # for items in range(2):
+        for items in content:
+            if GODSKIP == 0:
+                cursor = db.cursor()
+                # 贴链接
+                href = items.find("a",title=True).get("href")
+                # 贴标题
+                title = items.find("a",title=True).get("title")
+                # 发帖人
+                by = items.find_parent().find_next_sibling()
+                poster = by.find("cite").find("a").get_text()
+                # 发贴日期
+                postDate = by.find("em").find("span").get_text()
+                # 贴浏览数
+                viewed = int(items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text())
+                # 贴回复数
+                replies = int(items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text())
 
-        # cursor.execute("SELECT VERSION()")
-        # data = cursor.fetchone()
-        # print("Database version : %s " % data)
+                # cursor.execute("SELECT VERSION()")
+                # data = cursor.fetchone()
+                # print("Database version : %s " % data)
 
-        print("本列表页的url为："+ url)
-        print("本贴的标题为：" + title)
-        print("本贴的链接为："+ href)
-        print("本贴的回复数为："+ str(replies))
-        articlePages = getArticlePages(href,getContent(href),"article")
+                print("本列表页的url为："+ url)
+                print("本贴的标题为：" + title)
+                print("本贴的链接为："+ href)
+                print("本贴的回复数为："+ str(replies))
+                articlePages = getArticlePages(href,getContent(href),"article")
 
-        articleChange = articleIsExist(href, replies)
-        articleCommentMatch = articheCommentIsMatch(href)
+                articleChange = articleIsExist(href, replies)
+                articleCommentMatch = articheCommentIsMatch(href)
 
-        if articleChange == 0:
-            # 数据入库
-            insertArticle(poster, postDate, title, href, viewed, replies, articlePages.__len__())
-            # print("本贴的url有："+str(articlePages))
-            # 拿到贴子每页的dom结构，然后获取comment的数据
-            for page in articlePages:
-                pageContent = getContent(page)
-                fetchArticleComment(pageContent, href, page)
-            print("\n")
-        else:
-            print("本帖未发生变化,不做insertArticle操作")
-            """
-            就算已经有了article，因为各种原因，可能丢失comment，因此要对comment和replies的数量匹配进行校验，
-            以确定是否需要更新comment
-            """
-            if replies == articleCommentMatch:
-                print("本帖回复数匹配，不做insertArticleComment操作")
+                if articleChange == 0:
+                    # 数据入库
+                    insertArticle(poster, postDate, title, href, viewed, replies, articlePages.__len__())
+                    # print("本贴的url有："+str(articlePages))
+                    # 拿到贴子每页的dom结构，然后获取comment的数据
+                    for page in articlePages:
+                        pageContent = getContent(page)
+                        fetchArticleComment(pageContent, href, page)
+                    print("\n")
+                else:
+                    print("本帖未发生变化,不做insertArticle操作")
+                    """
+                    就算已经有了article，因为各种原因，可能丢失comment，因此要对comment和replies的数量匹配进行校验，
+                    以确定是否需要更新comment
+                    """
+                    if replies == articleCommentMatch:
+                        print("本帖回复数匹配，不做insertArticleComment操作")
+                    else:
+                        for page in articlePages:
+                                pageContent = getContent(page)
+                                fetchArticleComment(pageContent, href, page)
+                        print("\n")
+                    print("\n")
             else:
-                for page in articlePages:
-                    pageContent = getContent(page)
-                    fetchArticleComment(pageContent, href, page)
-                print("\n")
-            print("\n")
-
+                print("跳过分析本贴URL")
 
 db.close()
 # jsonData = json.loads(dataContent)
