@@ -14,6 +14,7 @@ import time
 # 上帝模式
 GODSKIP = 0
 
+# with open("url.txt","r") as file:
 url1 = "http://www.jzb.com/bbs/forum-1137-1.html"
 
 fp = request.urlopen(url1).read()
@@ -50,7 +51,11 @@ currentIndex = 159 - 213
 # currentIndex = 160
 # currentIndex = 161
 # currentIndex = 177
-currentIndex = 244
+# currentIndex = 244
+# currentIndex = 334
+# currentIndex = 359
+# currentIndex = 369
+currentIndex = 373
 urls = []
 
 # 循环拿到本栏目下的分页url
@@ -306,7 +311,10 @@ for url in urls:
                 title = items.find("a",title=True).get("title")
                 # 发帖人
                 by = items.find_parent().find_next_sibling()
-                poster = by.find("cite").find("a").get_text()
+                if by.find("cite").find("a"):
+                    poster = by.find("cite").find("a").get_text()
+                else:
+                    poster = "匿名"
                 # 发贴日期
                 postDate = by.find("em").find("span").get_text()
                 # 贴浏览数
