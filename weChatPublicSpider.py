@@ -95,8 +95,8 @@ def str2date(str,date_format="%Y-%m-%d %H:%M"):
     return date
 
 # 连接数据库
-# db = pymysql.connect("localhost", "root", "snaketzy123$","education")
-db = pymysql.connect("localhost", "root", "root","education")
+db = pymysql.connect("localhost", "root", "snaketzy123$","education")
+# db = pymysql.connect("localhost", "root", "root","education")
 
 """
 加入本贴内容到jzb_article表
@@ -278,70 +278,32 @@ def fetchArticleComment(data,href,page):
 for url in urls:
         # 拿到当前url的dom
         dataContent = getContent(url)
-        content = dataContent.find_all("span", attrs={"class": "xst thread-name"})
+        content = dataContent.find_all("div", attrs={"class": "pagedlist_item"})
         # for items in range(2):
         for items in content:
             if GODSKIP == 0:
                 cursor = db.cursor()
                 # 贴链接
-                href = items.find("a",title=True).get("href")
-                # 贴标题
-                title = items.find("a",title=True).get("title")
-                # 发帖人
-                by = items.find_parent().find_next_sibling()
-                if by.find("cite").find("a"):
-                    poster = by.find("cite").find("a").get_text()
-                else:
-                    poster = "匿名"
+                href = items.find("a").get("href")
                 # 发贴日期
-                postDate = by.find("em").find("span").get_text()
-                # 贴浏览数
-                if items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text() == "-":
-                    viewed = 0
-                else:
-                    viewed = int(items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text())
-                # 贴回复数
-                if items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text() == "-":
-                    replies = 0
-                else:
-                    replies = int(items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text())
-
+                postDate = items.find("span",attrs={"class","timestamp"}).get_text()
                 # cursor.execute("SELECT VERSION()")
                 # data = cursor.fetchone()
                 # print("Database version : %s " % data)
 
                 print("本列表页的url为："+ url)
-                print("本贴的标题为：" + title)
                 print("本贴的链接为："+ href)
-                print("本贴的回复数为："+ str(replies))
                 articlePages = getArticlePages(href,getContent(href),"article")
 
-                articleChange = articleIsExist(href, replies)
-                articleCommentMatch = articheCommentIsMatch(href)
+                # 数据入库
+                insertArticle(postDate, title, href, articlePages.__len__())
+                # print("本贴的url有："+str(articlePages))
+                # 拿到贴子每页的dom结构，然后获取comment的数据
+                for page in articlePages:
+                    pageContent = getContent(page)
+                    fetchArticleComment(pageContent, href, page)
+                print("\n")
 
-                if articleChange == 0:
-                    # 数据入库
-                    insertArticle(poster, postDate, title, href, viewed, replies, articlePages.__len__())
-                    # print("本贴的url有："+str(articlePages))
-                    # 拿到贴子每页的dom结构，然后获取comment的数据
-                    for page in articlePages:
-                        pageContent = getContent(page)
-                        fetchArticleComment(pageContent, href, page)
-                    print("\n")
-                else:
-                    print("本帖未发生变化,不做insertArticle操作")
-                    """
-                    就算已经有了article，因为各种原因，可能丢失comment，因此要对comment和replies的数量匹配进行校验，
-                    以确定是否需要更新comment
-                    """
-                    if replies == articleCommentMatch:
-                        print("本帖回复数匹配，不做insertArticleComment操作")
-                    else:
-                        for page in articlePages:
-                                pageContent = getContent(page)
-                                fetchArticleComment(pageContent, href, page)
-                        print("\n")
-                    print("\n")
             else:
                 print("跳过分析本贴URL")
 
