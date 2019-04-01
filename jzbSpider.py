@@ -55,7 +55,13 @@ currentIndex = 159 - 213
 # currentIndex = 334
 # currentIndex = 359
 # currentIndex = 369
-currentIndex = 373
+# currentIndex = 373
+# currentIndex = 379
+# currentIndex = 392
+# currentIndex = 408
+# currentIndex = 463
+# currentIndex = 464
+currentIndex = 473
 urls = []
 
 # 循环拿到本栏目下的分页url
@@ -318,9 +324,15 @@ for url in urls:
                 # 发贴日期
                 postDate = by.find("em").find("span").get_text()
                 # 贴浏览数
-                viewed = int(items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text())
+                if items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text() == "-":
+                    viewed = 0
+                else:
+                    viewed = int(items.find_parent().find_next_sibling().find_next_sibling().find("em").get_text())
                 # 贴回复数
-                replies = int(items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text())
+                if items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text() == "-":
+                    replies = 0
+                else:
+                    replies = int(items.find_parent().find_next_sibling().find_next_sibling().find("a").get_text())
 
                 # cursor.execute("SELECT VERSION()")
                 # data = cursor.fetchone()
