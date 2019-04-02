@@ -22,6 +22,8 @@ headers = {
 with open("FeZaoDuKe.txt","r") as file:
     url1 = file.read()
 # url1 = "https://chuansongme.com/account/FeZaoDuKe?start=0"
+# 根url
+rootUrl = url1.split("account")[0]
 
 urlRequest = request.Request(url=url1,headers=headers)
 fp = request.urlopen(urlRequest).read()
@@ -45,7 +47,7 @@ while currentIndex <= endIndex:
 
 # 获得页面dom数据
 def getContent(url):
-    fp = request.urlopen(request.Request(url=url,headers=headers)).read()
+    fp = request.urlopen(request.Request(url=re.sub("//n","/n",url),headers=headers)).read()
     data = BeautifulSoup(fp.decode("utf-8"), "html.parser")
     return data
 
@@ -95,8 +97,8 @@ def str2date(str,date_format="%Y-%m-%d %H:%M"):
     return date
 
 # 连接数据库
-db = pymysql.connect("localhost", "root", "snaketzy123$","education")
-# db = pymysql.connect("localhost", "root", "root","education")
+# db = pymysql.connect("localhost", "root", "snaketzy123$","education")
+db = pymysql.connect("localhost", "root", "root","education")
 
 """
 加入本贴内容到jzb_article表
@@ -290,20 +292,32 @@ for url in urls:
                 # cursor.execute("SELECT VERSION()")
                 # data = cursor.fetchone()
                 # print("Database version : %s " % data)
+                # 标题
+                title = re.sub("\n","",items.find("a").get_text())
+                # 帖子内容
+                # content = getContent(rootUrl+href).find("div",attrs={"class","rich_media_content"})
+                # 作者
+                author = getContent(rootUrl+href).find("span",attrs={"class","rich_media_meta rich_media_meta_text"}).getText()
+                # 帖子属于哪个公号
+                articleCatelogName = re.sub("\n","",getContent(rootUrl+href).find("span",attrs={"class","rich_media_meta rich_media_meta_nickname"}).getText())
 
                 print("本列表页的url为："+ url)
                 print("本贴的链接为："+ href)
-                articlePages = getArticlePages(href,getContent(href),"article")
+                print("本贴的标题为："+ title)
+                print("本贴的作者为："+ author)
+                print("本贴的目录为："+ articleCatelogName)
+
+                # articlePages = getArticlePages(href,getContent(href),"article")
 
                 # 数据入库
-                insertArticle(postDate, title, href, articlePages.__len__())
+                # insertArticle(postDate, title, href, articlePages.__len__())
                 # print("本贴的url有："+str(articlePages))
                 # 拿到贴子每页的dom结构，然后获取comment的数据
-                for page in articlePages:
-                    pageContent = getContent(page)
-                    fetchArticleComment(pageContent, href, page)
+                # for page in articlePages:
+                #     pageContent = getContent(page)
+                #     fetchArticleComment(pageContent, href, page)
                 print("\n")
-
+                time.sleep(1)
             else:
                 print("跳过分析本贴URL")
 
