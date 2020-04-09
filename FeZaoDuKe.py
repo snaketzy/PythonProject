@@ -6,27 +6,37 @@ from urllib.parse import quote
 import string
 import json
 from bs4 import BeautifulSoup
+import pdfkit
 
-listUrl = "https://mp.weixin.qq.com/profile?src=3&timestamp=1529746670&ver=1&signature=07VDeMiUAG0av39cka13COjcq44y7n*Dm-SQWhg5*7Gb5Fti6yPqZHgtbdE-AqvRX4rnhwXGfYKiYaJpvZKz5A=="
+listUrl = "http://chuansong.me/account/FeZaoDuKe"
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0',
+    "cookie": "__cfduid=d920b0941d5bceb5c2ae96cf8f09bf9661529474621; __cfduid=d62c67249fcaed37080ede9d7a933c5cf1529470692; c_secure_login=bm9wZQ%3D%3D; c_secure_pass=de169a78693d815b7fc014a2ef23130c; c_secure_ssl=bm9wZQ%3D%3D; c_secure_tracker_ssl=bm9wZQ%3D%3D; c_secure_uid=MTAxMzAy"
+}
+urlsArray = []
 
-fp = request.urlopen(listUrl).read()
-data = BeautifulSoup(fp.decode("utf-8"),"html.parser")
-dataContent = data.find("div",attrs={"data-react-class":"experience_albums/ExperienceAlbumSections"}).get("data-react-props")
+urlsArrayIndex = 0
 
-jsonData = json.loads(dataContent)
+while urlsArrayIndex < 1645:
+    urlsArray.append("http://chuansong.me/account/FeZaoDuKe?start="+str(urlsArrayIndex))
+    urlsArrayIndex += 12
 
-print(dataContent)
-print(os.getcwd())
-#os.makedirs(os.getcwd()+"/"+data.title.get_text())
-print("\n")
+def getArticleContent(url):
+    urlRequest = request.Request(url=listUrl, headers=headers)
+    fp = request.urlopen(urlRequest).read()
+    data = BeautifulSoup(fp.decode("utf-8"), "html.parser")
+    print(data)
 
-print(data.title.get_text())
+def getArticleUrl(url):
+    urlRequest = request.Request(url=listUrl,headers=headers)
+    fp = request.urlopen(urlRequest).read()
+    data = BeautifulSoup(fp.decode("utf-8"),"html.parser")
+    articleUrls = data.find_all(href=re.compile('/n/'))
+    for index,item in enumerate(articleUrls):
+        getArticleContent("http://chuansong.me"+item.get("href"))
 
-for items in jsonData["sections"]:
-    #os.makedirs(os.getcwd() + "/" + data.title.get_text()+"/"+items["name"])
-    print("\n"+items["name"])
-    for item in items["audios"]:
-        #localUrl = os.getcwd() + "/" + data.title.get_text()+"/"+items["name"]+"/"+item["user_name"] + "-" + item["name"]+".mp3"
-        #request.urlretrieve(item["src"], localUrl,Schedule)
-        #print(localUrl)
-        print([item["user_name"] + "-" + item["name"], item["src"]])
+for index, item in enumerate(urlsArray):
+    # getArticleUrl(item)
+    print("")
+
+getArticleUrl("http://chuansong.me/account/FeZaoDuKe?start=0")

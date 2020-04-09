@@ -41,6 +41,7 @@
 
 import re
 import urllib3
+import urllib
 from urllib import request
 from urllib.parse import quote
 import string
@@ -53,18 +54,27 @@ import traceback
 
 url = "http://www.qianmu.org/ranking/1528.htm"
 
-specificUrl = 'http://www.qianmu.org/2015QS世界大学排名'
+# specificUrl = 'http://www.qianmu.org/2018QS传播与媒体排名'
+specificUrl = 'http://www.qianmu.org/2018QS%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%A6%E4%B8%8E%E5%8F%A4%E4%BB%A3%E5%8F%B2%E6%8E%92%E5%90%8D'
+# specificUrl = 'http://www.qianmu.org/2015QS世界大学排名'
+specificUrl = urllib.parse.unquote(specificUrl, encoding='utf-8', errors='replace')
 
 def fetchUrls(url):
     data = request.urlopen(url).read()
     htmlData = BeautifulSoup(data.decode('utf-8'),'html.parser')
-    links = htmlData.find_all(href=re.compile("20"),target="_blank")
+    links = htmlData.find_all(href=re.compile("http://www.qianmu.org/20"),target="_blank")
+    links.append(htmlData.find(href=re.compile("2018QS图书馆信息管理"),target="_blank"))
+    links.append(htmlData.find(href=re.compile("903.htm"),target="_blank"))
+    # print(links)
     for index,link in enumerate(links):
+        if link.get("href").find("http")!=0:
+            link["href"] = "http://www.qianmu.org"+link.get("href")
         # print(link.get("href"))
         getRankDetail(link.get("href"))
 
 
 def getRankDetail(url1):
+    url1 = urllib.parse.unquote(url1, encoding='utf-8', errors='replace')
     fp = request.urlopen(quote(url1,safe='/:?=')).read()
     data = BeautifulSoup(fp.decode("utf-8"),"html.parser")
     # for link in data.find_all(href=re.compile("2018"),target="_blank"):
@@ -90,15 +100,19 @@ def getRankDetail(url1):
                 url =item.find_all("td")[1].find('a').get('href')
                 # collegeName
                 collegeName = item.find_all("td")[1].find('a').getText()
+                print(collegeName)
             else:
                 for obj in item.find_all("td")[1]:
                     #url
                     url = ''
                     print(url)
                     #collegeName
-                    collegeName = obj
-                    print(collegeName)
-
+                    if str(type(obj)).find("Tag") != -1:
+                        collegeName = obj.string
+                        print(collegeName)
+                    elif obj.__len__() != 0:
+                        collegeName = obj.string
+                        print(collegeName)
             #englishName
             englishName = item.find_all("td")[2].getText()
             print(englishName)
@@ -134,5 +148,5 @@ def getRankDetail(url1):
                 db.rollback()
             db.close()
 
-# fetchUrls(url)
-getRankDetail(specificUrl)
+fetchUrls(url)
+# getRankDetail(specificUrl)
