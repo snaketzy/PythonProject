@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="" />
+    <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/captureButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/captureButton.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,12 +43,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="48" />
-    <option name="y" value="23" />
-    <option name="width" value="1232" />
-    <option name="height" value="777" />
   </component>
   <component name="ProjectId" id="1aJ1VkRaCFzzEaN2ylVTuntvbvs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -205,7 +202,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526008637264</updated>
-      <workItem from="1586438910671" duration="13000" />
+      <workItem from="1586438910671" duration="6230000" />
     </task>
     <servers />
   </component>
@@ -213,6 +210,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1381" height="420" key="GridCell.Tab.0.bottom" timestamp="1586462669496">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1824" height="467" key="GridCell.Tab.0.bottom/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586439579991" />
+    <state width="1381" height="420" key="GridCell.Tab.0.bottom/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669496" />
+    <state width="1381" height="420" key="GridCell.Tab.0.center" timestamp="1586462669495">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1824" height="467" key="GridCell.Tab.0.center/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586439579990" />
+    <state width="1381" height="420" key="GridCell.Tab.0.center/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669495" />
+    <state width="1381" height="420" key="GridCell.Tab.0.left" timestamp="1586462669492">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1824" height="467" key="GridCell.Tab.0.left/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586439579989" />
+    <state width="1381" height="420" key="GridCell.Tab.0.left/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669492" />
+    <state width="1381" height="420" key="GridCell.Tab.0.right" timestamp="1586462669495">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1824" height="467" key="GridCell.Tab.0.right/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586439579990" />
+    <state width="1381" height="420" key="GridCell.Tab.0.right/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669495" />
+    <state width="1381" height="420" key="GridCell.Tab.1.bottom" timestamp="1586462669379">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1381" height="420" key="GridCell.Tab.1.bottom/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669379" />
+    <state width="1381" height="420" key="GridCell.Tab.1.center" timestamp="1586462669378">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1381" height="420" key="GridCell.Tab.1.center/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669378" />
+    <state width="1381" height="420" key="GridCell.Tab.1.left" timestamp="1586462669377">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1381" height="420" key="GridCell.Tab.1.left/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669377" />
+    <state width="1381" height="420" key="GridCell.Tab.1.right" timestamp="1586462669379">
+      <screen x="-2492" y="-879" width="2492" height="1417" />
+    </state>
+    <state width="1381" height="420" key="GridCell.Tab.1.right/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586462669379" />
     <state x="-1424" y="22" key="SettingsEditor" timestamp="1586438922699">
       <screen x="-1866" y="-145" width="1866" height="1057" />
     </state>
@@ -276,81 +309,15 @@
         <watch expression="freeRecord.__len__()" language="Python" />
         <watch expression="record.find(&quot;a&quot;).get(&quot;href&quot;)" language="Python" />
         <watch expression="recordList+record.getText().strip()+&quot;\n&quot;" language="Python" />
+        <watch expression="driver.find_element_by_xpath(&quot;//span[@data-offset-key]&quot;).clear()" language="Python" />
+        <watch expression="driver.find_element_by_css_selector(&quot;.ant-btn,.ant-btn-primary,.ant-btn-round &gt; span&quot;)" language="Python" />
+        <watch expression="platformTradeIDDropdownControl.get_attribute(&quot;aria-controls&quot;)" language="Python" />
+        <watch expression="driver.find_element_by_id('45908366-dd5c-4c4c-a0db-48ca37f9c3dc')" language="Python" />
+        <watch expression="random.choice(platformTradeIDDropdownList)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject$captureButton.coverage" NAME="captureButton Coverage Results" MODIFIED="1586438944943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>recordList</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>recordList = recordList+record.getText().strip()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>recordList+record.getText().strip()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>recordList+record.</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>recordList+record.getText().strip()+&quot;\n&quot;</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>recordList+</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>error</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>smtplib.SMTPException</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>record.find(&quot;a&quot;).get(&quot;href&quot;)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="setValue">
-      <expression>
-        <expression-string>阿姆斯特丹大学</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>'http://www.qianmu.org/2016QS世界大学排名'</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>'&quot;6062266198104a01bfcd8ff2cd13d38a&quot;'</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>'&quot;c9bb3223b104ce8c22e2c2d2b1f968c8&quot;'</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
+    <SUITE FILE_PATH="coverage/PythonProject$captureButton.coverage" NAME="captureButton Coverage Results" MODIFIED="1586462669326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,7 +1,10 @@
 #encoding =utf-8
+import random
+
 from selenium import webdriver
 import time
 from bs4 import BeautifulSoup
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -34,10 +37,40 @@ try:
     time.sleep(1)
     print("按钮文本:" + clickableButton.text)
     clickableButton.click()
-    time.sleep(3)
+    time.sleep(2)
+
+    step1ProjectName = driver.find_element_by_xpath("//span[@data-offset-key]")
+    step1ProjectName.send_keys("测试数据")
+
+    # 触发blur事件实现对input的规则校验
+    ActionChains(driver).context_click(driver.find_element_by_css_selector(".ant-btn,.ant-btn-primary,.ant-btn-round > span")).perform()
+
+    # 项目类型
+    platformTradeIDDropdown = driver.find_element_by_id("platformTradeID")
+    platformTradeIDDropdownControl = platformTradeIDDropdown.find_element_by_css_selector(".ant-select-selection,.ant-select-selection--single")
+    platformTradeIDDropdownControlValue = platformTradeIDDropdownControl.get_attribute("aria-controls")
+
+    platformTradeIDDropdown.click()
+    time.sleep(2)
+
+    # 项目类型下拉菜单列表
+    platformTradeIDDropdownListContainer = driver.find_element_by_id(platformTradeIDDropdownControlValue)
+
+    platformTradeIDDropdownList = platformTradeIDDropdownListContainer.find_elements_by_tag_name("li")
+    # 在项目类型下拉菜单中随机选择一个项
+    random.choice(platformTradeIDDropdownList).click()
+
+    # 类型职位
+    platformPositionIDDropdown = driver.find_element_by_id("platformTradeID")
+
+    time.sleep(2)
     driver.quit()
+
+
 except NoSuchElementException:
-    print('NoSuchElementException')
+    print('NoSuchElementException 找不到元素')
+    time.sleep(2)
+    driver.quit()
 
 
 # driver.quit()
