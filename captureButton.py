@@ -9,17 +9,14 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 
-class colors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+# 导入封装工具package
+import tools.browserInfo as browserInfo
+import tools.cookies as cookies
+import tools.windowInfo as windowInfo
+import tools.colors as colors
 
 driver = webdriver.Chrome()
+# driver = webdriver.Firefox()
 # driver.maximize_window()
 driver.set_window_size(1400, 800)
 
@@ -45,28 +42,20 @@ driver.get('https://pregongxj.viphrm.com/maker/project/list')
 
 time.sleep(1)
 
-# 通过JS直接获取系统cookie
-getCurrentCookies = "return document.cookie"
-getCurrentBrowserInfo = "return window.navigator.appVersion"
-getCurrentWindowInfo = "return document.body.offsetWidth + ' * ' + document.body.offsetHeight "
-cookiesValue = driver.execute_script(getCurrentCookies)
-browserInfoValue = driver.execute_script(getCurrentBrowserInfo)
-getCurrentWindowInfoValue = driver.execute_script(getCurrentWindowInfo)
-
 cookiesDict = {}
 
-for item in cookiesValue.split(";"):
+for item in cookies.getCurrentCookies(driver).split(";"):
     if item.split("=").__len__() > 1:
         cookiesDict[str.lstrip(item.split("=")[0])] = str.lstrip(item.split("=")[1].__str__())
 
-print("\n" +colors.HEADER+ "当前系统环境如下" +colors.ENDC)
-print("浏览器版本:" + browserInfoValue)
-print("\n" +colors.HEADER+ "当前浏览器环境如下" +colors.ENDC)
-print("浏览器窗口大小:" + getCurrentWindowInfoValue)
-print("\n" +colors.HEADER+ "当前数据环境如下" +colors.ENDC)
+print("\n" + colors.HEADER + "当前系统环境如下" + colors.ENDC)
+print("浏览器版本:" + browserInfo.getCurrentBrowserInfo(driver))
+print("\n" + colors.HEADER + "当前浏览器环境如下" + colors.ENDC)
+print("浏览器窗口大小:" + windowInfo.getCurrentWindowInfoValue(driver))
+print("\n" + colors.HEADER + "当前数据环境如下" + colors.ENDC)
 print("ms_cid:" + cookiesDict["ms_cid"])
 print("ms_member_token:" + cookiesDict["ms_member_token"])
-print("\n" +colors.HEADER+ "当前页面地址\n" +driver.current_url +colors.ENDC)
+print("\n" + colors.HEADER + "当前页面地址\n" + driver.current_url + colors.ENDC)
 
 try:
     # button = WebDriverWait(driver, 0.5).until(EC.element_to_be_clickable((driver.find_element_by_css_selector(".ant-btn,.ant-btn-primary,.ant-btn-round"))))
