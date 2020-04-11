@@ -19,7 +19,7 @@ headers = {
     "cookie": "SINAGLOBAL=8159053886607.719.1504021939043; UM_distinctid=1633ffd030b0-076c8fe8b33c6f-33617106-fa000-1633ffd030f27e; _s_tentry=www.shzhzy.com; Apache=6654736457514.647.1529841135251; ULV=1529841135318:8:1:1:6654736457514.647.1529841135251:1525698304659; YF-Page-G0=5c7144e56a57a456abed1d1511ad79e8; UOR=play.163.com,widget.weibo.com,www.baidu.com; YF-Ugrow-G0=56862bac2f6bf97368b95873bc687eef; YF-V5-G0=731b77772529a1f49eac82a9d2c2957f; WBtopGlobal_register_version=2e7679c973813872; SCF=AsIz23sX3iHce1OMtIeHwMY8VrDOCv99rJzmAhkO-dY0ly911lsnptp9ts60Wh8ul8kSRJE4sXrag6X1sFkFmHE.; SUB=_2A252Mu3SDeRhGedI6VET8ijFzzyIHXVVRlgarDV8PUNbmtBeLXPFkW9NV9UuAHhISKKdf4sJ7DPCQg3Qsh5yZ-jd; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWlikWgWBEYqmITibzs6_305JpX5K2hUgL.Fo2ceoeEeoq4Sh52dJLoIpjLxKqLBo2LBKBLxK-L1KeLBozLxKqL1K.L1KBt; SUHB=09PMu-Po2m9rhQ; ALF=1530910722; SSOLoginState=1530305923; un=13611885280; wb_view_log_1623226940=1280*8002"
 }
 
-with open("FeZaoDuKe.txt","r") as file:
+with open("FeZaoDuKe.txt", "r") as file:
     url1 = file.read()
 # url1 = "https://chuansongme.com/account/FeZaoDuKe?start=0"
 # 根url

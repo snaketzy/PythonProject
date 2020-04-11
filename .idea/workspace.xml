@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/captureButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/captureButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchHtml2PDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/BatchHtml2PDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FeZaoDuKe.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/FeZaoDuKe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FeZaoDuKe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/FeZaoDuKe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFriendsGroup/FeZaoDuKe.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/WeChatFriendsGroup/FeZaoDuKe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFriendsGroup/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/WeChatFriendsGroup/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoCheckInTTGServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/autoCheckInTTGServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoChekcIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/autoChekcIn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoChekcInServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/autoChekcInServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetchLatestFreeBlueRay.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/fetchLatestFreeBlueRay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetchWeibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/fetchWeibo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzbSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/jzbSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qianmu.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/qianmu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendMail.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/sendMail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weChatPublicSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/weChatPublicSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinya.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/xinya.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +91,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeZaoDuKe.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spiders/FeZaoDuKe.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +113,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autoChekcInServer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spiders/autoChekcInServer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +157,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fetchLatestFreeBlueRay.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spiders/fetchLatestFreeBlueRay.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +179,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qianmu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spiders/qianmu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +218,7 @@
       <workItem from="1586438910671" duration="6604000" />
       <workItem from="1586512305972" duration="4430000" />
       <workItem from="1586520663791" duration="8247000" />
-      <workItem from="1586594555136" duration="8322000" />
+      <workItem from="1586594555136" duration="8601000" />
     </task>
     <servers />
   </component>
