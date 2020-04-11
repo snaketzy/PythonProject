@@ -27,20 +27,19 @@ elem_user.send_keys("11657892036")
 elem_pwd = driver.find_element_by_name("password")
 elem_pwd.send_keys("wz123456")
 driver.find_element_by_xpath("//button[@class='btn btn-block btn-primary']").click() #登陆按钮
-time.sleep(1)
-
+time.sleep(5)
 
 appList = driver.find_elements_by_class_name("ant-col-4")
+
 if appList:
     # print("按钮文本:" + appList[6].text + "\n")
     appList[6].click()  #选择工薪记应用
+time.sleep(2)
 
-driver.get('https://pregongxj.viphrm.com/maker/project/list')
+# driver.get('https://pregongxj.viphrm.com/maker/project/list')
 # context = ssl._create_unverified_context()
 # res = urllib.request.urlopen('https://pregongxj.viphrm.com/maker/project/list', context = context)
 # response = requests.get("https://pregongxj.viphrm.com/maker/project/list")
-
-time.sleep(1)
 
 cookiesDict = {}
 
@@ -57,11 +56,15 @@ print("ms_cid:" + cookiesDict["ms_cid"])
 print("ms_member_token:" + cookiesDict["ms_member_token"])
 print("\n" + colors.HEADER + "当前页面地址\n" + driver.current_url + colors.ENDC)
 
+if driver.window_handles.__len__() > 1:
+    driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+
 try:
     # button = WebDriverWait(driver, 0.5).until(EC.element_to_be_clickable((driver.find_element_by_css_selector(".ant-btn,.ant-btn-primary,.ant-btn-round"))))
+
     clickableButton = driver.find_element_by_css_selector(".ant-btn,.ant-btn-primary,.ant-btn-round > span")
 
-    driver.switch_to_window(driver.window_handles[0])
     time.sleep(1)
     # print("按钮文本:" + clickableButton.text)
     clickableButton.click()
