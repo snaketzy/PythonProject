@@ -17,7 +17,7 @@ import tools.colors as colors
 
 driver = webdriver.Chrome()
 # driver = webdriver.Firefox()
-# driver.maximize_window()
+
 driver.set_window_size(1400, 800)
 
 driver.get('http://testlogin.viphrm.com/')

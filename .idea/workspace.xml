@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/BatchHtml2PDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/BatchHtml2PDF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeZaoDuKe.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/FeZaoDuKe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeZaoDuKe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/FeZaoDuKe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeChatFriendsGroup/FeZaoDuKe.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/WeChatFriendsGroup/FeZaoDuKe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeChatFriendsGroup/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/WeChatFriendsGroup/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoCheckInTTGServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/autoCheckInTTGServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoChekcIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/autoChekcIn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoChekcInServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/autoChekcInServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetchLatestFreeBlueRay.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/fetchLatestFreeBlueRay.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetchWeibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/fetchWeibo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jzbSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/jzbSpider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qianmu.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/qianmu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sendMail.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/sendMail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weChatPublicSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/weChatPublicSpider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xinya.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/xinya.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boluomishu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/customer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/customer/add/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/customer/add/stage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/customer/detail/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/customer/edit/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/captureButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/captureButton.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,15 +63,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spiders" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\homeProject\PythonProject" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.captureButton">
+  <component name="RunManager" selected="Python.boluomishu">
     <configuration name="FeZaoDuKe" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,20 +97,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="autoChekcInServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="boluomishu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="untitled2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/untitled2/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spiders/autoChekcInServer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boluomishu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,19 +186,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.autoChekcInServer" />
       <item itemvalue="Python.qianmu" />
       <item itemvalue="Python.FeZaoDuKe" />
       <item itemvalue="Python.fetchLatestFreeBlueRay" />
       <item itemvalue="Python.captureButton" />
+      <item itemvalue="Python.boluomishu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.boluomishu" />
         <item itemvalue="Python.captureButton" />
         <item itemvalue="Python.fetchLatestFreeBlueRay" />
         <item itemvalue="Python.FeZaoDuKe" />
         <item itemvalue="Python.qianmu" />
-        <item itemvalue="Python.autoChekcInServer" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +215,9 @@
       <workItem from="1586438910671" duration="6604000" />
       <workItem from="1586512305972" duration="4430000" />
       <workItem from="1586520663791" duration="8247000" />
-      <workItem from="1586594555136" duration="8601000" />
+      <workItem from="1586594555136" duration="8763000" />
+      <workItem from="1586975282717" duration="5149000" />
+      <workItem from="1587019134505" duration="6350000" />
     </task>
     <servers />
   </component>
@@ -226,94 +225,107 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2492" height="588" key="DebuggerActiveHint" timestamp="1586612335928">
+    <state width="2492" height="588" key="DebuggerActiveHint" timestamp="1586977637092">
       <screen x="-2492" y="-879" width="2492" height="1417" />
     </state>
     <state width="1864" height="438" key="DebuggerActiveHint/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586525455866" />
-    <state width="2492" height="588" key="DebuggerActiveHint/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586612335928" />
-    <state width="1238" height="273" key="GridCell.Tab.0.bottom" timestamp="1586613584017">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="2492" height="588" key="DebuggerActiveHint/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586977637092" />
+    <state width="1814" height="361" key="GridCell.Tab.0.bottom" timestamp="1587036620338">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="390" key="GridCell.Tab.0.bottom/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586528142720" />
-    <state width="1817" height="390" key="GridCell.Tab.0.bottom/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586527336501" />
-    <state width="1817" height="390" key="GridCell.Tab.0.bottom/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586527360041" />
-    <state width="1817" height="390" key="GridCell.Tab.0.bottom/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1586526176546" />
+    <state width="1814" height="764" key="GridCell.Tab.0.bottom/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587019332567" />
+    <state width="1814" height="260" key="GridCell.Tab.0.bottom/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659485" />
+    <state width="1814" height="361" key="GridCell.Tab.0.bottom/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975832" />
+    <state width="1814" height="361" key="GridCell.Tab.0.bottom/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355804" />
+    <state width="1814" height="361" key="GridCell.Tab.0.bottom/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620338" />
     <state width="1817" height="390" key="GridCell.Tab.0.bottom/0.23.1280.777/-1869.-145.1869.1057@-1869.-145.1869.1057" timestamp="1586526229589" />
-    <state width="1238" height="273" key="GridCell.Tab.0.bottom/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613584017" />
+    <state width="2450" height="534" key="GridCell.Tab.0.bottom/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359304" />
     <state width="1238" height="294" key="GridCell.Tab.0.bottom/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036653" />
     <state width="1817" height="142" key="GridCell.Tab.0.bottom/56.23.1864.1057@56.23.1864.1057" timestamp="1586515008575" />
     <state width="1817" height="142" key="GridCell.Tab.0.bottom/61.23.1859.1057@61.23.1859.1057" timestamp="1586517063125" />
-    <state width="1238" height="273" key="GridCell.Tab.0.center" timestamp="1586613584016">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.0.center" timestamp="1587036620333">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="390" key="GridCell.Tab.0.center/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586528142719" />
-    <state width="1817" height="390" key="GridCell.Tab.0.center/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586527336499" />
-    <state width="1817" height="390" key="GridCell.Tab.0.center/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586527360033" />
-    <state width="1817" height="390" key="GridCell.Tab.0.center/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1586526176545" />
+    <state width="1814" height="764" key="GridCell.Tab.0.center/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587019332566" />
+    <state width="1814" height="260" key="GridCell.Tab.0.center/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659481" />
+    <state width="1814" height="361" key="GridCell.Tab.0.center/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975831" />
+    <state width="1814" height="361" key="GridCell.Tab.0.center/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355799" />
+    <state width="1814" height="361" key="GridCell.Tab.0.center/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620333" />
     <state width="1817" height="390" key="GridCell.Tab.0.center/0.23.1280.777/-1869.-145.1869.1057@-1869.-145.1869.1057" timestamp="1586526229588" />
-    <state width="1238" height="273" key="GridCell.Tab.0.center/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613584016" />
+    <state width="2450" height="534" key="GridCell.Tab.0.center/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359303" />
     <state width="1238" height="294" key="GridCell.Tab.0.center/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036652" />
     <state width="1817" height="142" key="GridCell.Tab.0.center/56.23.1864.1057@56.23.1864.1057" timestamp="1586515008571" />
     <state width="1817" height="142" key="GridCell.Tab.0.center/61.23.1859.1057@61.23.1859.1057" timestamp="1586517063124" />
-    <state width="1238" height="273" key="GridCell.Tab.0.left" timestamp="1586613584016">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.0.left" timestamp="1587036620332">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="390" key="GridCell.Tab.0.left/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586528142719" />
-    <state width="1817" height="390" key="GridCell.Tab.0.left/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586527336499" />
-    <state width="1817" height="390" key="GridCell.Tab.0.left/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586527360032" />
-    <state width="1817" height="390" key="GridCell.Tab.0.left/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1586526176544" />
+    <state width="1814" height="764" key="GridCell.Tab.0.left/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587019332565" />
+    <state width="1814" height="260" key="GridCell.Tab.0.left/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659480" />
+    <state width="1814" height="361" key="GridCell.Tab.0.left/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975830" />
+    <state width="1814" height="361" key="GridCell.Tab.0.left/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355798" />
+    <state width="1814" height="361" key="GridCell.Tab.0.left/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620332" />
     <state width="1817" height="390" key="GridCell.Tab.0.left/0.23.1280.777/-1869.-145.1869.1057@-1869.-145.1869.1057" timestamp="1586526229587" />
-    <state width="1238" height="273" key="GridCell.Tab.0.left/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613584016" />
+    <state width="2450" height="534" key="GridCell.Tab.0.left/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359302" />
     <state width="1238" height="294" key="GridCell.Tab.0.left/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036651" />
     <state width="1817" height="142" key="GridCell.Tab.0.left/56.23.1864.1057@56.23.1864.1057" timestamp="1586515008570" />
     <state width="1817" height="142" key="GridCell.Tab.0.left/61.23.1859.1057@61.23.1859.1057" timestamp="1586517063123" />
-    <state width="1238" height="273" key="GridCell.Tab.0.right" timestamp="1586613584017">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.0.right" timestamp="1587036620334">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="390" key="GridCell.Tab.0.right/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586528142720" />
-    <state width="1817" height="390" key="GridCell.Tab.0.right/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586527336500" />
-    <state width="1817" height="390" key="GridCell.Tab.0.right/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586527360034" />
-    <state width="1817" height="390" key="GridCell.Tab.0.right/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1586526176545" />
+    <state width="1814" height="764" key="GridCell.Tab.0.right/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587019332567" />
+    <state width="1814" height="260" key="GridCell.Tab.0.right/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659483" />
+    <state width="1814" height="361" key="GridCell.Tab.0.right/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975831" />
+    <state width="1814" height="361" key="GridCell.Tab.0.right/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355800" />
+    <state width="1814" height="361" key="GridCell.Tab.0.right/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620334" />
     <state width="1817" height="390" key="GridCell.Tab.0.right/0.23.1280.777/-1869.-145.1869.1057@-1869.-145.1869.1057" timestamp="1586526229588" />
-    <state width="1238" height="273" key="GridCell.Tab.0.right/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613584017" />
+    <state width="2450" height="534" key="GridCell.Tab.0.right/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359303" />
     <state width="1238" height="294" key="GridCell.Tab.0.right/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036652" />
     <state width="1817" height="142" key="GridCell.Tab.0.right/56.23.1864.1057@56.23.1864.1057" timestamp="1586515008572" />
     <state width="1817" height="142" key="GridCell.Tab.0.right/61.23.1859.1057@61.23.1859.1057" timestamp="1586517063124" />
-    <state width="1238" height="464" key="GridCell.Tab.1.bottom" timestamp="1586613449788">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.1.bottom" timestamp="1587036620230">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="427" key="GridCell.Tab.1.bottom/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586525811179" />
-    <state width="1817" height="427" key="GridCell.Tab.1.bottom/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586525742106" />
-    <state width="1817" height="405" key="GridCell.Tab.1.bottom/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586522839314" />
-    <state width="1238" height="464" key="GridCell.Tab.1.bottom/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613449788" />
+    <state width="1238" height="534" key="GridCell.Tab.1.bottom/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587004902172" />
+    <state width="1814" height="260" key="GridCell.Tab.1.bottom/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659321" />
+    <state width="1814" height="361" key="GridCell.Tab.1.bottom/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975693" />
+    <state width="1814" height="361" key="GridCell.Tab.1.bottom/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355690" />
+    <state width="1814" height="361" key="GridCell.Tab.1.bottom/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620230" />
+    <state width="2450" height="534" key="GridCell.Tab.1.bottom/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359203" />
     <state width="1238" height="294" key="GridCell.Tab.1.bottom/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036655" />
-    <state width="1238" height="464" key="GridCell.Tab.1.center" timestamp="1586613449787">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.1.center" timestamp="1587036620229">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="427" key="GridCell.Tab.1.center/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586525811177" />
-    <state width="1817" height="427" key="GridCell.Tab.1.center/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586525742104" />
-    <state width="1817" height="405" key="GridCell.Tab.1.center/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586522839313" />
-    <state width="1238" height="464" key="GridCell.Tab.1.center/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613449787" />
+    <state width="1238" height="534" key="GridCell.Tab.1.center/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587004902170" />
+    <state width="1814" height="260" key="GridCell.Tab.1.center/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659318" />
+    <state width="1814" height="361" key="GridCell.Tab.1.center/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975692" />
+    <state width="1814" height="361" key="GridCell.Tab.1.center/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355690" />
+    <state width="1814" height="361" key="GridCell.Tab.1.center/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620229" />
+    <state width="2450" height="534" key="GridCell.Tab.1.center/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359200" />
     <state width="1238" height="294" key="GridCell.Tab.1.center/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036654" />
-    <state width="1238" height="464" key="GridCell.Tab.1.left" timestamp="1586613449786">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.1.left" timestamp="1587036620229">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="427" key="GridCell.Tab.1.left/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586525811176" />
-    <state width="1817" height="427" key="GridCell.Tab.1.left/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586525742104" />
-    <state width="1817" height="405" key="GridCell.Tab.1.left/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586522839312" />
-    <state width="1238" height="464" key="GridCell.Tab.1.left/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613449786" />
+    <state width="1238" height="534" key="GridCell.Tab.1.left/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587004902169" />
+    <state width="1814" height="260" key="GridCell.Tab.1.left/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659317" />
+    <state width="1814" height="361" key="GridCell.Tab.1.left/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975692" />
+    <state width="1814" height="361" key="GridCell.Tab.1.left/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355689" />
+    <state width="1814" height="361" key="GridCell.Tab.1.left/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620229" />
+    <state width="2450" height="534" key="GridCell.Tab.1.left/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359191" />
     <state width="1238" height="294" key="GridCell.Tab.1.left/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036653" />
-    <state width="1238" height="464" key="GridCell.Tab.1.right" timestamp="1586613449787">
-      <screen x="-2492" y="-879" width="2492" height="1417" />
+    <state width="1814" height="361" key="GridCell.Tab.1.right" timestamp="1587036620230">
+      <screen x="-1868" y="-145" width="1868" height="1057" />
     </state>
-    <state width="1817" height="427" key="GridCell.Tab.1.right/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1586525811178" />
-    <state width="1817" height="427" key="GridCell.Tab.1.right/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1586525742105" />
-    <state width="1817" height="405" key="GridCell.Tab.1.right/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586522839313" />
-    <state width="1238" height="464" key="GridCell.Tab.1.right/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586613449787" />
+    <state width="1238" height="534" key="GridCell.Tab.1.right/0.23.1280.777/-1856.-145.1856.1057@-1856.-145.1856.1057" timestamp="1587004902170" />
+    <state width="1814" height="260" key="GridCell.Tab.1.right/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587035659319" />
+    <state width="1814" height="361" key="GridCell.Tab.1.right/0.23.1280.777/-1864.-145.1864.1057@-1864.-145.1864.1057" timestamp="1587035975693" />
+    <state width="1814" height="361" key="GridCell.Tab.1.right/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1587036355690" />
+    <state width="1814" height="361" key="GridCell.Tab.1.right/0.23.1280.777/-1868.-145.1868.1057@-1868.-145.1868.1057" timestamp="1587036620230" />
+    <state width="2450" height="534" key="GridCell.Tab.1.right/0.23.1280.777/-2492.-879.2492.1417@-2492.-879.2492.1417" timestamp="1586980359203" />
     <state width="1238" height="294" key="GridCell.Tab.1.right/0.23.1280.777/-2492.-879.2492.1417@0.23.1280.777" timestamp="1586612036654" />
-    <state x="-1424" y="22" key="SettingsEditor" timestamp="1586438922699">
-      <screen x="-1866" y="-145" width="1866" height="1057" />
+    <state x="-1133" y="90" key="SettingsEditor" timestamp="1587034497399">
+      <screen x="-1859" y="-145" width="1859" height="1057" />
     </state>
+    <state x="-1133" y="90" key="SettingsEditor/0.23.1280.777/-1859.-145.1859.1057@-1859.-145.1859.1057" timestamp="1587034497399" />
     <state x="-1424" y="22" key="SettingsEditor/0.23.1280.777/-1866.-145.1866.1057@-1866.-145.1866.1057" timestamp="1586438922699" />
   </component>
   <component name="XDebuggerManager">
@@ -328,80 +340,17 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="json.loads(str(dataContent))" language="Python" />
-        <watch expression="responseHTML" language="Python" />
-        <watch expression="responseText" language="Python" />
-        <watch expression="re.search(&quot;(signed_token:) (\&quot;.*\&quot;)&quot;,responseText,flags=0).group(2)" language="Python" />
-        <watch expression="signed_token[1:33]" language="Python" />
-        <watch expression="data1.find_all(&quot;tr&quot;).__len__()" language="Python" />
-        <watch expression="obj" language="Python" />
-        <watch expression="obj.get(&quot;href&quot;)" language="Python" />
-        <watch expression="recordList" language="Python" />
-        <watch expression="obj.getText()" language="Python" />
-        <watch expression="str(item.find_all(&quot;td&quot;)[1]).find('href')" language="Python" />
-        <watch expression="obj.getText()" language="Python" />
-        <watch expression="item.find_all(&quot;td&quot;)[1].find('a').get('href')" language="Python" />
-        <watch expression="str(type(obj)).find(&quot;Tag&quot;)" language="Python" />
-        <watch expression="str(type(obj)).index('bs4')" language="Python" />
-        <watch expression="item.find_all(&quot;td&quot;)[1].find('a').getText()" language="Python" />
-        <watch expression="signed_token[1:33]" language="Python" />
-        <watch expression="str(response._content,'utf-8')" language="Python" />
-        <watch expression="url1.encode(&quot;utf-8&quot;)" language="Python" />
-        <watch expression="data.title.getText()" language="Python" />
-        <watch expression="str(item.find_all(&quot;td&quot;)[1]).find('href')" language="Python" />
-        <watch expression="item.find_all(&quot;td&quot;)[1].find('a').getText()" language="Python" />
-        <watch expression="type(data)" language="Python" />
-        <watch expression="data.getText().find(&quot;FM.view&quot;)" language="Python" />
-        <watch expression="len(data.getText())" language="Python" />
-        <watch expression="eval(data.getText()[8:len(data.getText())-1])[&quot;html&quot;]" language="Python" />
-        <watch expression="tweet.find(&quot;div&quot;,class_=&quot;WB_text&quot;).contents" language="Python" />
-        <watch expression="type(text)" language="Python" />
-        <watch expression="text.name" language="Python" />
-        <watch expression="str(text)" language="Python" />
-        <watch expression="we_text" language="Python" />
-        <watch expression="testString" language="Python" />
-        <watch expression="re.(r&quot;style=\&quot;(.*?)\&quot;&quot;,testString,flags=0)" language="Python" />
-        <watch expression="htmlData.find(href=re.compile(&quot;903.htm&quot;),target=&quot;_blank&quot;)" language="Python" />
-        <watch expression="link.get(&quot;href&quot;)" language="Python" />
-        <watch expression="link[&quot;href&quot;]" language="Python" />
-        <watch expression="str(type(obj)).find(&quot;Tag&quot;)" language="Python" />
-        <watch expression="obj.string" language="Python" />
-        <watch expression="item.find_all(&quot;td&quot;)[1].find('a').getText()" language="Python" />
-        <watch expression="item.find_all(&quot;td&quot;)[1]" language="Python" />
-        <watch expression="obj.__len__()" language="Python" />
-        <watch expression="data.find_all(&quot;table&quot;,class_=&quot;torrentname&quot;)" language="Python" />
-        <watch expression="record.find_all(&quot;img&quot;,)" language="Python" />
-        <watch expression="freeRecord.__len__()" language="Python" />
-        <watch expression="record.find(&quot;a&quot;).get(&quot;href&quot;)" language="Python" />
-        <watch expression="recordList+record.getText().strip()+&quot;\n&quot;" language="Python" />
-        <watch expression="driver.find_element_by_xpath(&quot;//span[@data-offset-key]&quot;).clear()" language="Python" />
-        <watch expression="driver.find_element_by_css_selector(&quot;.ant-btn,.ant-btn-primary,.ant-btn-round &gt; span&quot;)" language="Python" />
-        <watch expression="platformTradeIDDropdownControl.get_attribute(&quot;aria-controls&quot;)" language="Python" />
-        <watch expression="driver.find_element_by_id('45908366-dd5c-4c4c-a0db-48ca37f9c3dc')" language="Python" />
-        <watch expression="random.choice(platformTradeIDDropdownList)" language="Python" />
-        <watch expression="urllib.request.urlopen('https://pregongxj.viphrm.com/maker/project/list')" language="Python" />
-        <watch expression="res.getCookies()" language="Python" />
-        <watch expression="driver.execute_script(&quot;var cookie = window.document.cookie&quot;)" language="Python" />
-        <watch expression="driver.execute_script(js)" language="Python" />
-        <watch expression="cookiesValue" language="Python" />
-        <watch expression="cookiesValue.split(&quot;;&quot;)" language="Python" />
-        <watch expression="item" language="Python" />
-        <watch expression="cookiesDict[&quot;ms_type&quot;] = 1" language="Python" />
-        <watch expression="item.split(&quot;=&quot;)[0]" language="Python" />
-        <watch expression="appList" />
-        <watch expression="item.split(&quot;=&quot;)[1]" language="Python" />
-        <watch expression="cookiesDict" language="Python" />
-        <watch expression="cookiesDict[' ms_member_token']" language="Python" />
         <watch expression="driver.current_window_handle" language="Python" />
         <watch expression="driver.window_handles[0]" language="Python" />
-        <watch expression="driver.find_element_by_xpath(&quot;//div[@class =\&quot;ant-col ant-col-4\&quot;][7]&quot;)" language="Python" />
-        <watch expression="clickableButton" language="Python" />
         <watch expression="driver.find_elements_by_class_name(&quot;ant-col-4&quot;)" language="Python" />
-        <watch expression="driver.find_element_by_css_selector(&quot;.ant-btn,.ant-btn-primary,.ant-btn-round&quot;)" language="Python" />
+        <watch expression="driver.find_elements_by_xpath(&quot;//button[@class='ant-btn ant-btn-primary ant-btn-round']/span[contains(text(),'添加商机')]&quot;)" language="Python" />
+        <watch expression="driver.find_element_by_xpath(&quot;//input[@id= 'opportunityName']&quot;)" language="Python" />
+        <watch expression="k.get_attribute(&quot;title&quot;)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject$captureButton.coverage" NAME="captureButton Coverage Results" MODIFIED="1586613584006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$captureButton.coverage" NAME="captureButton Coverage Results" MODIFIED="1586975621414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$boluomishu.coverage" NAME="boluomishu Coverage Results" MODIFIED="1587036620178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
