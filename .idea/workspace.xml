@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="add functions">
-      <change afterPath="$PROJECT_DIR$/Flask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guessNumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spiders/hdhomeAutoCheckIn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiders/hdhomeAutoCheckIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/hdhomeAutoCheckIn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
