@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3680b6de-6d26-41bb-9eaa-e39216fa5272" name="Default" comment="add functions">
-      <change afterPath="$PROJECT_DIR$/check-in/tothegloryAutoChekcIn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check-in/operateQLEnv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiders/autoCheckInTTGServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/check-in/autoCheckInTTGServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiders/autoChekcIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/check-in/autoChekcIn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiders/autoChekcInServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/check-in/autoChekcInServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiders/hdhomeAutoCheckIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/check-in/hdhomeAutoCheckIn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check-in/tothegloryAutoChekcIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/check-in/tothegloryAutoChekcIn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

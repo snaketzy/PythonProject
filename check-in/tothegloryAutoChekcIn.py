@@ -1,4 +1,19 @@
-from playwright.sync_api import  sync_playwright
+from playwright.sync_api import sync_playwright
+import re
+import sys
+import os
+
+# 添加项目根目录到Python路径
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from operateQLEnv import QL
+
+ql = QL(
+  address="http://101.43.54.73:15700",
+  id="-9Kv1wOZrlbz",
+  secret="MDcNL1_pOSHH7MslVNSDwbjU"
+)
+
 
 def login_with_headless_browser(url, username, password):
   """
@@ -14,8 +29,9 @@ def login_with_headless_browser(url, username, password):
 
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     browser = playwright.chromium.launch(
-      headless=False,
-      slow_mo= 2000
+    #   headless=False,
+      headless=True,
+      slow_mo=2000
     )
     context = browser.new_context(user_agent=user_agent)
     page = context.new_page()
@@ -25,10 +41,10 @@ def login_with_headless_browser(url, username, password):
       page.goto(url)
       print(f"已访问：{url}")
 
-      #等待页面加载元素@ref
+      # 等待页面加载元素@ref
       page.wait_for_load_state("networkidle")
 
-      #填写登录表单
+      # 填写登录表单
       if page.wait_for_selector("#login-name"):
         print(f"找到：login-name")
         page.fill("#login-name", username)
@@ -47,13 +63,34 @@ def login_with_headless_browser(url, username, password):
         print(context.cookies())
         print("登录完成")
 
-      if page.get_by_text("已签到"):
+      if page.get_by_text("已签到").is_visible():
         print("已签过")
+
+        target_name = "ttg"
+        target_id = 2  # 请替换为你要更新的环境变量的实际ID
+        new_value = "false"
+        # 执行更新
+        if ql.update_env(env_id=target_id, name=target_name, value=new_value, remarks="通过OpenAPI更新"):
+          print("操作成功！")
+        else:
+          print("操作失败。")
+
         browser.close()
       elif page.wait_for_selector("#sp_signed #signed"):
         print(f"找到：签到")
         page.click("#sp_signed #signed")
         print("签到完成")
+
+        target_name = "ttg"
+        target_id = 2  # 请替换为你要更新的环境变量的实际ID
+        new_value = "true"
+
+        # 执行更新
+        if ql.update_env(env_id=target_id, name=target_name, value=new_value, remarks="通过OpenAPI更新"):
+          print("操作成功！")
+        else:
+          print("操作失败。")
+
         browser.close()
       else:
         print("没有操作")
@@ -74,4 +111,4 @@ if __name__ == "__main__":
   username = "snaketzy"
   password = "Snaketzy123$"
 
-  login_with_headless_browser(urlLogin,username,password)
+  login_with_headless_browser(urlLogin, username, password)
